@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chapters>
+    <chapter>
+        <title>Chapter 1: Introduction to Graph Coloring</title>
+        <content>
+            <![CDATA[
+            1.1 Basic Concepts:
+            Graph Coloring: A graph coloring is an assignment of labels, called colors, to the vertices of a graph such that no two adjacent vertices share the same color.
+            Chromatic Number: The chromatic number χ(G) of a graph G is the minimal number of colors needed for a proper vertex coloring.
+
+            1.2 Historical Context and Applications:
+            - Historical Background: The study of graph colorings is closely linked to planar graphs and the four color theorem, which was the original motivation for algebraic graph theory.
+            - Modern Applications: Applications of graph coloring are found in computer science, information theory, complexity theory, and practical problems like minimizing conflicts in scheduling. Sudoku can be seen as a graph coloring problem.
+            ]]>
+        </content>
+    </chapter>
+    <chapter>
+        <title>Chapter 2: Chromatic Numbers and Specific Graphs</title>
+        <content>
+            <![CDATA[
+            2.1 Types of Graphs and Their Chromatic Numbers:
+            - Complete Graphs (K_n): The chromatic number χ(K_n) = n since each vertex must have a different color.
+            - Bipartite Graphs (K_{m,n}): The chromatic number χ(K_{m,n}) = 2 if both partitions have at least one vertex.
+
+            2.2 Chromatic Number of Cyclic Graphs:
+            - Cyclic Graphs (C_n):
+              - For even n: χ(C_n) = 2
+              - For odd n: χ(C_n) = 3
+
+            2.3 Combining Graphs:
+            - Combined Graphs: If graphs G and G' are combined to create a graph H by connecting each vertex of G to each vertex of G', then χ(G) + χ(G') = χ(H).
+            ]]>
+        </content>
+    </chapter>
+    <chapter>
+        <title>Chapter 3: Graph Coloring Algorithms</title>
+        <content>
+            <![CDATA[
+            3.1 Greedy Coloring Algorithm:
+            - Description: The greedy algorithm assigns colors to vertices in a sequential manner, choosing the smallest available color that hasn't been used by adjacent vertices.
+            - Example: Step-by-step illustration of the greedy algorithm on a sample graph.
+
+            3.2 Backtracking Algorithm:
+            - Description: A more exhaustive approach that tries all possible colorings and backtracks upon encountering an invalid coloring.
+            - Example: Step-by-step illustration of the backtracking algorithm on a sample graph.
+            ]]>
+        </content>
+    </chapter>
+    <chapter>
+        <title>Chapter 4: Advanced Graph Coloring Techniques</title>
+        <content>
+            <![CDATA[
+            4.1 DSATUR Algorithm:
+            - Description: The DSATUR (Degree of Saturation) algorithm colors the vertex with the highest saturation degree (the number of different colors to which it is adjacent) at each step.
+            - Example: Step-by-step illustration of the DSATUR algorithm on a sample graph.
+
+            4.2 Genetic Algorithms:
+            - Description: A metaheuristic inspired by natural selection to find approximate solutions for graph coloring.
+            - Example: Explanation of how genetic algorithms can be applied to graph coloring and a sample implementation.
+            ]]>
+        </content>
+    </chapter>
+    <chapter>
+        <title>Chapter 5: Applications and Complexity</title>
+        <content>
+            <![CDATA[
+            5.1 Real-World Applications:
+            - Scheduling Problems: How graph coloring can be used to minimize conflicts in scheduling tasks or resources.
+            - Map Coloring: The classic problem of coloring a map such that no two adjacent regions share the same color.
+
+            5.2 Computational Complexity:
+            - NP-Completeness: Explanation of why the graph coloring problem is NP-complete.
+            - Approximation Algorithms: Discussion of algorithms that provide approximate solutions to the graph coloring problem.
+            ]]>
+        </content>
+    </chapter>
+</chapters>

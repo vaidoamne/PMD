@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D3EF9C24">
+    android:background="#D39E9A99">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_nodes"
@@ -35,13 +35,22 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btn_draw"
+    <Spinner
+        android:id="@+id/spinner_algorithms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/til_edges"
         android:layout_centerHorizontal="true"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btn_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_algorithms"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
         android:text="Draw" />
 
     <View
@@ -50,6 +59,16 @@
         android:layout_height="match_parent"
         android:layout_below="@id/btn_draw"
         android:layout_margin="16dp"
-        android:background="#D3EF9C24" />
+        android:background="#D39E9A99" />
+
+    <TextView
+        android:id="@+id/algorithm_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Algorithm Steps"
+        android:textSize="18sp" />
 
 </RelativeLayout>

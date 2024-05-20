@@ -3,13 +3,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#D3EF9C24"
-        android:orientation="vertical"
-        tools:context=".Quizz"
-        android:padding="16dp">
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D39E9A99"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Quizz">
 
     <TextView
         android:id="@+id/questionTextView"
@@ -18,12 +18,6 @@
         android:text="How many nodes?"
         android:textSize="18sp"
         android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="329dp"
-        android:layout_height="322dp"
-        app:srcCompat="@drawable/mainimage" />
 
     <EditText
         android:id="@+id/answerEditText"
@@ -39,21 +33,24 @@
         android:layout_height="69dp"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
         android:text="Submit" />
+
     <TextView
         android:id="@+id/answerTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:textSize="18sp"
         android:textStyle="italic"
-        android:visibility="gone"
-        android:layout_marginTop="16dp" />
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="250dp"
         android:layout_height="69dp"
         android:layout_gravity="center"
+        android:backgroundTint="#000000"
         android:onClick="GoHome3"
         android:text="Home" />
 </LinearLayout>

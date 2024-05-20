@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D3EF9C24"
+    android:background="#D39E9A99"
     tools:context=".SecondPage">
 
 
@@ -25,6 +25,7 @@
         android:id="@+id/button"
         android:layout_width="250dp"
         android:layout_height="69dp"
+        android:backgroundTint="#000000"
         android:onClick="GoLearning"
         android:text="Start Learning"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,6 +41,7 @@
         android:layout_height="69dp"
         android:layout_marginTop="39dp"
         android:layout_marginBottom="176dp"
+        android:backgroundTint="#000000"
         android:onClick="GoQuizz"
         android:text="Test Your Knowledge"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,6 +57,7 @@
         android:layout_height="69dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="96dp"
+        android:backgroundTint="#000000"
         android:onClick="GoHome"
         android:text="Home"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,8 +73,10 @@
         android:layout_height="69dp"
         android:layout_marginTop="78dp"
         android:layout_marginBottom="82dp"
+        android:backgroundTint="#000000"
         android:onClick="GoVisualization"
         android:text="Visualization"
+        android:textColorLink="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
